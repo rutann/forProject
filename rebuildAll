@@ -1,0 +1,8 @@
+mvn clean install -f domain/pom.xml
+mvn eclipse:eclipse  -f domain/pom.xml
+
+mvn clean install -f frontend/pom.xml
+mvn eclipse:eclipse -f frontend/pom.xml
+
+mvn clean install -DskipTests -f backend/pom.xml
+mvn eclipse:eclipse -f backend/pom.xml
